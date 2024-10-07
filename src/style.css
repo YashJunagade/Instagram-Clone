@@ -1,0 +1,744 @@
+*{
+     margin: 0;
+     padding: 0;
+     background-color: black;
+     color:white;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Style for leftside navbar  */
+.leftside-navbar-container{
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     width: 310px;
+     border-right: 1px solid #3b3d3e;
+     padding: 8px 12px 20px;
+     height: 988px;
+}  
+
+.leftside-navbar-instagram-logo-container{
+     height: 32px;
+     padding: 29px 12px 16px;
+     margin-bottom: 19px;
+     cursor: pointer;
+}
+
+.small-logo{
+     display: none;
+}
+
+.leftside-navbar-menu-container{
+     height: 719px;
+}
+
+.leftside-navbar-menu-container .menu-options,
+.leftside-navbar-threads-more-container .menu-options{
+     margin: 4px 0px;
+     padding : 12px;
+     display: flex;
+     align-items: center;
+     font-weight: 400;
+     cursor: pointer;
+     height: 28px;
+}
+
+.leftside-navbar-menu-container .menu-options:hover,
+.leftside-navbar-menu-container .menu-options svg:hover,
+.leftside-navbar-menu-container .menu-options p:hover,
+.leftside-navbar-threads-more-container .menu-options:hover,
+.leftside-navbar-threads-more-container .menu-options svg:hover,
+.leftside-navbar-threads-more-container .menu-options p:hover{
+     background: #1a1b1b;
+}
+
+.leftside-navbar-threads-more-container .menu-options p,
+.leftside-navbar-menu-container .menu-options p{
+     font-size: 16px;
+     margin-left: 16px;
+}
+
+.font-bold{
+     font-weight: 700;
+}
+
+.leftside-navbar-menu-container .menu-options img{
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+}
+
+.leftside-navbar-threads-more-container{
+     height: 220px;
+}
+
+/* Center content in body */
+.container {
+     max-width: 1200px; /* Adjust as needed */
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #1a1b1b; /* Optional for visual separation */
+}
+
+/* Responsive */
+
+/* @media (max-width: 1024px){
+     .leftside-navbar-container{
+          width: 48px;
+          padding: 8px 12px 20px;
+          height: 836px;
+     }
+     .leftside-navbar-menu-container{
+          height: 792px;
+     }
+     .leftside-navbar-container .menu-options p{
+          display: none;
+     }
+     .big-logo{
+          display: none;
+     }
+     .small-logo{
+          display: block;
+     }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+     .leftside-navbar-container{
+          width: 250px;
+          padding: 8px 12px 20px;
+          height: 988px;
+     }
+     .leftside-navbar-menu-container{
+          height: 784px;
+     }
+} */
+
+
+/* Style for main container  */
+.instagram-main-container{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     height: 100%;
+     box-sizing: border-box;
+     padding-left: 40px;
+}
+.center-container{
+     height: 1111px;
+     width: 630px;
+     margin-left:290px ;
+     margin-top: 16px;
+     box-sizing: border-box;
+}
+
+/* style for center container  */
+
+.center-statusbar-container{
+     padding: 8px 0px;
+     margin: 0 0 10px 5px ;
+     display: flex;
+}
+
+.user-statuses-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 64px;
+     cursor: pointer;
+     margin-right: 16px;
+}
+
+.status-ring {
+     width: 62px;
+     height: 62px;
+     padding: 1px; /* Adjust the padding to control the width of the ring */
+     background: linear-gradient(
+       45deg,
+       #F5C33B,
+       #f7b928,
+       #f3425f,
+       #f0f,
+       #9360f7
+     );
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.status-profile-pic {
+     width: 56px; /* Slightly smaller than the status ring */
+     height: 56px;
+     border-radius: 50%;
+     border: 2px solid black; /* White border between the profile picture and the ring */
+     object-fit: cover;
+}
+
+.center-statusbar-container .status-user-name{
+     font-size: 12px;
+     text-align: center;
+     margin-top: 4px;
+}
+
+/* suggested reels and posts  */
+
+.suggested-reels-posts-container{
+     height: 811px;
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+}
+
+.suggested-reels-posts-container-1{
+     width: 470px;
+     margin-top: 6px;
+     border-bottom: 1px solid #3b3d3e;
+}
+.suggested-reels-posts-1-1{
+     height: 32px;
+     width: 466px;
+     padding: 0 0 12px 0px;
+     display: flex;
+     cursor: pointer;
+     margin-bottom: 6px;
+}
+
+.suggested-status-ring{
+     width: 38px;
+     height: 38px;
+     padding: 2px; /* Adjust the padding to control the width of the ring */
+     background: linear-gradient(
+       45deg,
+       #F5C33B,
+       #f7b928,
+       #f3425f,
+       #f0f,
+       #9360f7
+     );
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.suggested-profile-pic{
+     width: 34px; /* Slightly smaller than the status ring */
+     height: 34px;
+     border-radius: 50%;
+     border: 2px solid black; /* White border between the profile picture and the ring */
+     object-fit: cover;
+}
+
+.suggested-reels-posts-1-1-text{
+     display: flex;
+     flex-direction: column;
+     width: 390px;
+}
+
+.suggested-reels-posts-1-1-text-1{
+     display: flex;
+     font-size: 14px;
+     padding-left: 5px;
+     line-height: 18px;
+}
+
+.suggested-reels-posts-1-1-text-1 .verify img{
+     margin-left: 5px;
+     margin-right: 5px;
+}
+
+.suggested-reels-posts-1-1-text-1 .username{
+     font-weight: 500;
+}
+
+.suggested-reels-posts-1-1-text-1 .post-time{
+     color: rgb(168, 168, 168);
+}
+
+.suggested-profile-more{
+     margin-top: 10px;
+     margin-left: 10px;
+}
+
+.suggested-reels-post-1-2{
+     height: 585px;
+     width: 468px;
+     border: 1px solid #3b3d3e;
+     border-radius: 5px;
+}
+
+.container-3-1{
+     width: 100%;
+     height: 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.container-3-1-1 svg{
+     margin-right: 10px;
+     cursor: pointer;
+}
+.container-3-1-2{
+     cursor: pointer;
+}
+.container-3-2{
+     font-weight: 600;
+     font-size: 14px;
+}
+
+.container-3-3{
+     display: flex;
+     width: 98%;
+     margin-top: 5px;
+     font-size: 14px;
+}
+
+.container-3-3 .username{
+     font-weight: 600;
+     cursor: pointer;
+}
+
+.container-3-3 .verify{
+     margin: 0 5px;
+}
+
+.container-3-3 .more{
+     color:rgb(168, 168, 168);
+     cursor: pointer;
+}
+
+.container-3-4{
+     font-size: 14px;
+     padding-top: 10px;
+     color:rgb(168, 168, 168);
+     cursor: pointer;
+}
+
+.suggested-reels-post-1-2 img{
+     object-fit: cover;
+     height: 585px;
+     width: 468px;
+}
+
+.container-3-5{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 8px;
+     align-items: center;
+}
+
+.container-3-5 .text-1 input{
+     outline: none;
+     border: none;
+     color: rgb(168, 168, 168);
+     font-size: 14px;
+}
+
+.container-3-5 .text-2 svg{
+     cursor: pointer;
+}
+
+.suggested-reels-post-1-2 video{
+     width: 468px;
+     height: 585px;   
+}
+
+.reel-video-container{
+     position: relative;
+}
+
+.mute-unmute-btn{
+     position: absolute;
+     bottom: 20px;
+     right: 20px;
+     padding: 5px 10px;
+     background: #202021;
+     border-radius: 50%;
+     cursor: pointer;
+}
+
+
+/* right side container(suggested for you) */
+
+.rightside-container{
+     max-width: 319px;
+     height: 651px;
+     padding-left: 64px;
+}
+
+.rightside-1{
+     width: 100%;
+     height: 44px;
+     margin-top: 36px;
+     padding: 0 16px;
+     box-sizing: border-box;
+     display: flex;
+}
+
+.rightside-2{
+     height: 351px;
+     margin: 24px 0 8px 0;
+     width: 100%;
+     box-sizing: border-box;  
+     padding: 4px 16px;
+     font-weight: 600;
+
+}
+
+.rightside-3{
+     height: 111px;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 0 16px;
+     margin-bottom: 8px;
+}
+
+.profile-pic-container img{
+     height: 44px;
+     width: 44px;
+     border-radius: 50%;
+     margin-right: 12px;
+     cursor: pointer;
+}
+
+.user-details-container{
+     display: flex;
+     justify-content: space-between;
+}
+
+.user-profile-details{
+     display: flex;
+     flex-direction: column;
+     width: 190px;
+     line-height: 18px;
+}
+
+.user-profile-details .username{
+     font-size: 14px;
+     font-weight: 600;
+     margin-top: 5px;
+     cursor: pointer;
+}
+
+.user-profile-details .profilename{
+     font-size: 14px;
+     line-height: 18px;
+     color: rgb(168, 168, 168);
+     cursor: pointer;
+}
+
+.user-profile-btn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.user-profile-btn a{
+     text-decoration: none;
+     font-size: 12px;
+     font-weight: 600;
+     color:rgb(0, 149, 246) ;
+}
+
+.user-profile-btn a:hover{
+     color: aliceblue    ;
+}
+
+.rightside-2-1{
+     font-size: 14px;
+     color:rgb(168, 168, 168) ;
+     
+}
+
+.rightside-suggested-text{
+     display: flex;
+     justify-content: space-between;
+}
+
+.rightside-2-2 a{
+     font-size: 12px;
+     text-decoration: none;
+     color: aliceblue;
+}
+
+.rightside-2-2 a:hover{
+     color:rgb(168, 168, 168) ;
+}
+
+.rightside-suggested-user{
+     display: flex;
+     padding: 7px 0;
+}
+
+.user-details-container .user-profile-details .suggested{
+     font-size: 12px;
+     color: rgb(168, 168, 168);
+}
+
+.rightside-3{
+     width: 320px;
+}
+
+.rightside-3-1{
+     display: flex;
+}
+
+.rightside-3-1 ul li{
+     list-style: none;
+     display: inline;
+}
+
+.rightside-3-1 ul li a{
+     text-decoration: none;
+     font-size: 12px;
+     color: rgb(115, 115, 115);
+     cursor: pointer;
+}
+
+.rightside-3-1 ul li span{
+     color: rgb(115, 115, 115);
+}
+
+
+.rightside-3-1 ul li a:hover{
+     text-decoration: underline;
+}
+
+.rightside-3-2{
+     font-size: 12px;
+     color: rgb(115, 115, 115);
+     margin-top: 18px;
+}
+
+
+/* style for reels  */
+.center-main-container{
+     width: 470px;
+     margin-left: 85px;
+}
+
+.main-center-statusbar-suggestionPost-container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 468px;
+}
+
+.status-bar-container{
+   width: 468px;
+}
+
+.suggested-reels-container{
+   height: 816px;
+   width: 468px;
+}
+
+.status-bar-logo-text-container{
+
+   border-bottom:1px solid rgb(40, 40, 40);
+}
+
+.status-bar{
+   height: 185px;
+   width: 90%;
+   padding: 32px 12px;
+   text-align: center;
+   margin-top: 22px;
+   margin-left: 12px;
+}
+.status-bar-logo img{
+   height: 96px;
+   width: 96px;
+   margin-bottom: 10px;
+}
+
+.status-bar-logo-t1{
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.status-bar-logo-t2{
+   font-size: 14px;
+   color: rgb(168, 168, 168);
+}
+
+.suggested-post-text{
+   font-size: 20px;
+   margin-top: 20px;
+   margin-left: 4px;
+   margin-bottom: 14px;
+}
+
+.suggested-reels-container{
+   height: 818px;
+}
+
+.suggested-reels-inner-container-1{
+   height: 34px;
+   width: 100%;
+   padding: 0px 0px 12px 4px;
+   display: flex;
+   font-size: 14px;
+}
+
+.suggested-reels-inner-container-1-1-profile-pic img{
+   height: 32px;
+   width: 32px;
+   border-radius: 50%;
+   object-fit: cover;
+   object-position: center;
+   margin-right: 12px;
+}
+.user-detail-text1{
+   line-height: 18px;
+}
+
+.user-detail-text1-1{
+   color: rgb(168, 168, 168);
+}
+
+.user-detail-text1-2 a{
+   text-decoration: none;
+   color: rgb(0, 149, 246);
+   font-weight: 500;
+   line-height: 20px;
+}
+
+.user-detail-text1-2 a:hover{
+   color: aliceblue;
+}
+
+.user-detail-text2{
+   font-size: 13px;
+}
+
+.suggested-reels-inner-container-1-2-profile-pic{
+   width: 420px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.suggested-reels-inner-container-1-more-details svg{
+   margin-top: 8px;
+   cursor: pointer;
+}
+
+.suggested-reels-inner-container-2{
+   height: 585px;
+   width: 100%;
+   border: 1px solid rgb(40, 40, 40);
+   position: relative;
+}
+.suggested-reels-inner-container-2 video{
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+   object-position: center;
+}
+.mute-unmute-container{
+   position: absolute;
+   bottom: 10px;
+   right: 14px;
+   z-index: 100;
+   background-color: rgb(40, 40, 40);
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.suggested-reels-inner-container-3{
+   height: 135px;
+   width: 100%;
+   border-bottom: 1px solid rgb(40, 40, 40);
+   padding-bottom: 10px;
+   line-height: 24px;
+   font-size: 14px;
+}
+
+.reel-discription-1{
+   margin: 4px 0px;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 12px;
+}
+
+
+.reel-discription-1 svg,   
+.reel-discription-5 svg,
+.reel-discription-4,
+.reel-discription-3 .more,
+.reel-discription-3-user-name,
+.suggested-reels-inner-container-1-1-profile-pic,
+.user-detail-text1,
+.user-detail-text2{
+   cursor: pointer;
+}
+
+.like-comment-share{
+   width: 234px;
+}
+
+.like-comment-share svg{
+   margin-right: 12px;
+}
+
+.reel-discription-2, .reel-discription-3-user-name{
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.reel-discription-3 .more, .reel-discription-4, .reel-discription-5{
+   color: rgb(168, 168, 168);
+}
+
+.reel-discription-5{
+   display: flex;
+   justify-content: space-between;
+}
+
+.reel-discription-5-1, .reel-discription-5-2{
+   color: rgb(168, 168, 168);
+}
+
+.reel-discription-5-1 input{
+   border: none;
+   outline: none;
+}
+/* footer style  */
+.footer{
+}
+
+.footer-1-container{
+   display: flex;
+   justify-content: center;
+}
+.footer-1-container-option{
+   margin: 8px 10px;
+   cursor: pointer;
+   color: rgb(168, 168, 168);
+   font-size: 12px;
+}
+
+.footer-2-container{
+   display: flex;
+   font-size: 12px;
+   margin-top: 20px;
+}
+
+.footer-2-container-1 select{
+   outline: none;
+   border: none;
+   color: rgb(168, 168, 168);
+   margin-right: 20px ;
+}
+
+.footer-2-container-1, 
+.footer-2-container-2{
+   color: rgb(168, 168, 168);
+}
