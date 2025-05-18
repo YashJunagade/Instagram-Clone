@@ -4,4 +4,4 @@ This project is a frontend clone of Instagram, built with modern web technologie
 
 ## 🚀 Live Demo
 
-Check out the live version of the project here: [Instagram Clone](https://instagram-clone-rho-lac.vercel.app/)
+Check out the live version of the project here: [Instagram Clone](https://instagram-clone-ten-snowy.vercel.app/)
